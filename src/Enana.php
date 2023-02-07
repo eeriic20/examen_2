@@ -19,11 +19,11 @@ class Enana
         #Se le quitan 10 puntos de vida a la Enana y además se cambia el valor de situacion (si fuera necesario)
         $this->puntosVida = $this->puntosVida - 10;
         if ($this->puntosVida > 0) {
-            $this->situacion = "viva";
+            $this->situacion = "Viva";
         } else if ($this->puntosVida < 0) {
-            $this->situacion = "muerta";
+            $this->situacion = "Muerta";
         } else if ($this->puntosVida == 0) {
-            $this->situacion = "limbo";
+            $this->situacion = "Limbo";
         }
         return $this->puntosVida;
     }
@@ -33,11 +33,11 @@ class Enana
         #Se le quitan 10 puntos de vida a la Enana y además se cambia el valor de situacion (si fuera necesario)
         $this->puntosVida = $this->puntosVida - 10;
         if ($this->puntosVida > 0) {
-            $this->situacion = "viva";
+            $this->situacion = "Viva";
         } else if ($this->puntosVida < 0) {
-            $this->situacion = "muerta";
+            $this->situacion = "Muerta";
         } else if ($this->puntosVida == 0) {
-            $this->situacion = "limbo";
+            $this->situacion = "Limbo";
         }
         return $this->situacion;
     }
@@ -46,7 +46,7 @@ class Enana
     {
         #Se le quita toda la vida que posea hasta tener 0 puntos de vida y cambiarle la situacion a limbo
         $this->puntosVida = 0;
-        $this->situacion = "limbo";
+        $this->situacion = "Limbo";
         return $this->puntosVida;
     }
 
@@ -54,7 +54,7 @@ class Enana
     {
         #Se le quita toda la vida que posea hasta tener 0 puntos de vida y cambiarle la situacion a limbo
         $this->puntosVida = 0;
-        $this->situacion = "limbo";
+        $this->situacion = "Limbo";
         return $this->situacion;
     }
 
@@ -66,11 +66,11 @@ class Enana
         if ($this->puntosVida != 0) {
             $this->puntosVida = $this->puntosVida + 10;
             if ($this->puntosVida > 0) {
-                $this->situacion = "viva";
+                $this->situacion = "Viva";
             } else if ($this->puntosVida < 0) {
-                $this->situacion = "muerta";
+                $this->situacion = "Muerta";
             } else if ($this->puntosVida == 0) {
-                $this->situacion = "limbo";
+                $this->situacion = "Limbo";
             }
         }
         return $this->puntosVida;
@@ -84,11 +84,11 @@ class Enana
         if ($this->puntosVida != 0) {
             $this->puntosVida = $this->puntosVida + 10;
             if ($this->puntosVida > 0) {
-                $this->situacion = "viva";
+                $this->situacion = "Viva";
             } else if ($this->puntosVida < 0) {
-                $this->situacion = "muerta";
+                $this->situacion = "Muerta";
             } else if ($this->puntosVida == 0) {
-                $this->situacion = "limbo";
+                $this->situacion = "Limbo";
             }
         }
         return $this->situacion;
@@ -99,11 +99,11 @@ class Enana
         #Única manera de devolver a la vida del limbo. Además se otorgarán 50 puntos de vida.
         $this->puntosVida = $this->puntosVida + 50;
         if ($this->puntosVida > 0) {
-            $this->situacion = "viva";
+            $this->situacion = "Viva";
         } else if ($this->puntosVida < 0) {
-            $this->situacion = "muerta";
+            $this->situacion = "Muerta";
         } else if ($this->puntosVida == 0) {
-            $this->situacion = "limbo";
+            $this->situacion = "Limbo";
         }
         return $this->puntosVida;
     }
@@ -113,11 +113,11 @@ class Enana
         #Única manera de devolver a la vida del limbo. Además se otorgarán 50 puntos de vida.
         $this->puntosVida = $this->puntosVida + 50;
         if ($this->puntosVida > 0) {
-            $this->situacion = "viva";
+            $this->situacion = "Viva";
         } else if ($this->puntosVida < 0) {
-            $this->situacion = "muerta";
+            $this->situacion = "Muerta";
         } else if ($this->puntosVida == 0) {
-            $this->situacion = "limbo";
+            $this->situacion = "Limbo";
         }
         return $this->situacion;
     }
