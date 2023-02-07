@@ -11,7 +11,8 @@ class EnanaTest extends TestCase {
         #Se tendrá que probar que la vida es mayor que 0 y además que su situación es viva
         $enana = new Enana("Enana1", 20, "Viva");
         $this->assertEquals(10, $enana->heridaLeve());
-        $this->assertEquals("Viva", $enana->heridaLeve2());
+        $enana2 = new Enana("Enana1", 20, "Viva");
+        $this->assertEquals("Viva", $enana2->heridaLeve2());
 
     }
 
@@ -21,7 +22,8 @@ class EnanaTest extends TestCase {
         #Se tendrá que probar que la vida es menor que 0 y además que su situación es muerta
         $enana = new Enana("Enana2", 5, "Viva");
         $this->assertEquals(-5, $enana->heridaLeve());
-        $this->assertEquals("Muerta", $enana->heridaLeve2());
+        $enana2 = new Enana("Enana2", 5, "Viva");
+        $this->assertEquals("Muerta", $enana2->heridaLeve2());
     }
 
     public function testHeridaGrave() {
@@ -30,7 +32,8 @@ class EnanaTest extends TestCase {
         #Se tendrá que probar que la vida es 0 y además que su situación es limbo
         $enana = new Enana("Enana3", 10, "Viva");
         $this->assertEquals(0, $enana->heridaGrave());
-        $this->assertEquals("Limbo", $enana->heridaGrave2());
+        $enana2 = new Enana("Enana3", 10, "Viva");
+        $this->assertEquals("Limbo", $enana2->heridaGrave2());
 
     }
     
@@ -40,7 +43,8 @@ class EnanaTest extends TestCase {
         #Se tendrá que probar que la vida es mayor que 0 y que su situación ha cambiado a viva
         $enana = new Enana("Enana4", -5, "Muerta");
         $this->assertEquals(5, $enana->pocima());
-        $this->assertEquals("Viva", $enana->pocima2());
+        $enana2 = new Enana("Enana4", -5, "Muerta");
+        $this->assertEquals("Viva", $enana2->pocima2());
 
     }
 
@@ -50,6 +54,7 @@ class EnanaTest extends TestCase {
         #Se tendrá que probar que la vida es 50 y la situación ha cambiado a viva.
         $enana = new Enana("Enana5", 0, "Limbo");
         $this->assertEquals(50, $enana->pocimaExtra());
-        $this->assertEquals("Viva", $enana->pocimaExtra2());
+        $enana2 = new Enana("Enana5", 0, "Limbo");
+        $this->assertEquals("Viva", $enana2->pocimaExtra2());
     }
 }
